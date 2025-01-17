@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="3b40682b-30cd-454f-9e94-4b4bf31e64a4">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[select *from t_klasifikasi]]>
+	</queryString>
+	<field name="id_klasifikasi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_potensi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="marker" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="255" y="21" width="121" height="20" uuid="c045c3c9-fc58-45f4-a048-df33fdd966e1"/>
+				<text><![CDATA[LAPORAN KLASIFIKASI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement x="149" y="2" width="100" height="20" uuid="1bd897a9-917d-4018-b8a8-811ea73d0aca"/>
+				<text><![CDATA[id_klasifikasi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="255" y="2" width="100" height="20" uuid="b2f44f81-0742-41c8-9ac0-9ec35b327db4"/>
+				<text><![CDATA[jenis_potensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="361" y="2" width="100" height="20" uuid="2ad6c649-ea8f-4d76-b7fc-45d3d72ed50a"/>
+				<text><![CDATA[marker]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="149" y="3" width="100" height="20" uuid="459c0492-5ad3-4372-9ed8-52fb744a2626"/>
+				<textFieldExpression><![CDATA[$F{id_klasifikasi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="255" y="3" width="100" height="20" uuid="e835f2e0-3ef3-47a7-9bd3-acfe47496d80"/>
+				<textFieldExpression><![CDATA[$F{jenis_potensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="361" y="4" width="100" height="20" uuid="cc26c2ac-38bc-40d1-89fc-1c0b49191f0f"/>
+				<textFieldExpression><![CDATA[$F{marker}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

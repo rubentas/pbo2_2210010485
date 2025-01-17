@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e93f554c-d1b9-439a-8351-bc13b1ac6549">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM t_potensi]]>
+	</queryString>
+	<field name="id_potensi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jenis_potensi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="luas_potensi" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="potensi_produksi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="46" splitType="Stretch">
+			<staticText>
+				<reportElement x="224" y="14" width="100" height="20" uuid="98369634-f392-489f-bfb8-a94e71bf94e0"/>
+				<text><![CDATA[LAPORAN POTENSI]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<staticText>
+				<reportElement x="67" y="0" width="100" height="20" uuid="968ce272-2eca-40cf-b87c-0a6dbc7fb5e1"/>
+				<text><![CDATA[id_potensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="167" y="0" width="100" height="20" uuid="1e41ab46-3b1c-4a3d-94d9-0f81c167c06d"/>
+				<text><![CDATA[jenis_potensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="0" width="100" height="20" uuid="48e566ee-22f9-4e39-af9e-5d59c8dc5c07"/>
+				<text><![CDATA[luas_potensi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="0" width="100" height="20" uuid="945e1d9c-1344-4d5a-b394-13cd60c9d824"/>
+				<text><![CDATA[potensi_produksi]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="25" splitType="Stretch">
+			<textField>
+				<reportElement x="67" y="0" width="100" height="20" uuid="82d6e21f-d2fd-4fca-a3aa-4e17119f4293"/>
+				<textFieldExpression><![CDATA[$F{id_potensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="167" y="0" width="100" height="20" uuid="4e34359f-621d-4ff0-b327-99b6114441d4"/>
+				<textFieldExpression><![CDATA[$F{jenis_potensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="0" width="100" height="20" uuid="a754402a-3a41-446f-9cd9-b372525cc988"/>
+				<textFieldExpression><![CDATA[$F{luas_potensi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="367" y="0" width="100" height="20" uuid="f5c7ae46-66c7-457d-acef-75838e6cb807"/>
+				<textFieldExpression><![CDATA[$F{potensi_produksi}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
